@@ -12,7 +12,7 @@ require('dotenv').config();
 const app = express();
 
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://superiorrecoveryllc.com',
     optionsSuccessStatus: 200,
     credentials: true
 }
@@ -34,7 +34,7 @@ app.use('/dashboard', cognitoMiddleware, dashboardRoutes);
 
 mongoose.connect(process.env.MONGO_URI)
 .then(result => {
-    app.listen(8080);
+    app.listen(5000);
 })
 .catch(err => {
     console.log(err);
