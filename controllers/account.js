@@ -3,6 +3,11 @@ const fs = require('fs');
 const path = require('path');
 const User = require('../models/user');
 
+
+exports.root = (req, res, next) => {
+    res.status(200).json({message: 'Successful'});
+    next();
+}
 exports.getUser = (req, res, next) => {
     const tokens = JSON.stringify(req.body.credentials.accessToken);
     const awsUser = req.body.user.userName;
