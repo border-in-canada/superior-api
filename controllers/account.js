@@ -8,7 +8,9 @@ exports.root = (req, res, next) => {
     res.status(200).json({message: 'Successful'});
     next();
 }
+
 exports.getUser = (req, res, next) => {
+    console.log(req);
     const tokens = JSON.stringify(req.body.credentials.accessToken);
     const awsUser = req.body.user.userName;
     const userEmail = req.body.user.email;
