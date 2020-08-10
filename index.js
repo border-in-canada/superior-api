@@ -12,7 +12,7 @@ require('dotenv').config();
 const app = express();
 
 const corsOptions = {
-    origin: 'https://superiorrecoveryllc.com',
+    origin: 'https://www.superiorrecoveryllc.com',
     optionsSuccessStatus: 200,
     credentials: true
 }

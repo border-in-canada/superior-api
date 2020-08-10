@@ -3,12 +3,12 @@
     "userPoolBaseUri": "https://auth.superiorrecoveryllc.com",
     "userPool": "us-west-2_PO8Ifm8LZ",
     "clientId": "2fg43nmkt8t3gd6b9h7cbogr9l",
-    "callbackUri": "http://localhost:3000/auth/",
+    "callbackUri": "https://superiorrecoveryllc.com/auth/",
     "signoutUri": "https://www.superiorrecoveryllc.com",
     "tokenScopes": [
         "openid",
         "email",
         "profile",
-        "http://localhost:8080/"
+        "https://api.superiorrecoveryll.com/"
     ]
 }
